@@ -1,0 +1,145 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #ecf0f1;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #34495e;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding: 15px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-wrapper {
+  width: 30%;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-wrapper {
+    width: 50%;
+  }
+}
+
+.image-wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.image-wrapper div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+h3 {
+  font-size: 36px;
+  margin: 30px 0;
+  color: #34495e;
+}
+@media only screen and (max-width: 600px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+.content-wrapper {
+  width: 90%;
+  box-sizing: border-box;
+}
+.item-wrapper {
+  margin-top: 20px;
+}
+
+.items {
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-top-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.items-icons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-icons span i {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .items-icons span i {
+    font-size: 24px;
+  }
+}
+
+.items-links {
+  flex: 1;
+  margin-left: 12px;
+}
+.items-links p {
+  font-size: 24px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .items-links p {
+    font-size: 17px;
+  }
+}
+
+.naver-border {
+  border: 1.5px solid #2db400;
+}
+
+.naver-color {
+  color: #2db400;
+}
+
+.instagram-border {
+  border: 1.5px solid #c32aa3;
+}
+
+.instagram-color {
+  color: #c32aa3;
+}
+
+.boomcards-border {
+  border: 1.5px solid #0374c7;
+}
+
+.boomcards-color {
+  color: #0374c7;
+}
